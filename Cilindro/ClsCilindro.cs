@@ -28,6 +28,8 @@ namespace Cilindro
             return superficie.ToString();
         }
 
+        //Comentario de prueba
+
         public override void DibujarFigura(Graphics g, int x, int y, int diametro)
         {
             CoordX = x;
