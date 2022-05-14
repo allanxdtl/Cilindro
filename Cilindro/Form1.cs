@@ -28,6 +28,7 @@ namespace Cilindro
 
         private void btnEjecutar_Click(object sender, EventArgs e)
         {
+            //xd
             //Se crea un grafico para dibujar en panel1
             g = panel1.CreateGraphics();
             g.Clear(Color.FromArgb(79, 218, 232));
