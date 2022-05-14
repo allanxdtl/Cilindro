@@ -28,6 +28,7 @@ namespace Cilindro
 
         private void btnEjecutar_Click(object sender, EventArgs e)
         {
+            //Se crea un grafico para dibujar en panel1
             g = panel1.CreateGraphics();
             g.Clear(Color.FromArgb(79, 218, 232));
             switch (comboBox1.SelectedIndex)
@@ -40,10 +41,13 @@ namespace Cilindro
                     break;
                 //Cilindro
                 case 1:
+                    //Se obtienen los datos del usuario
                     cilindro.Altura = Convert.ToInt32(txtAltura.Text);
                     cilindro.CoordX = Convert.ToInt16(txtCoordX.Text);
                     cilindro.CoordY = Convert.ToInt16(txtCoordY.Text);
+                    //Se dibuja en la forma
                     cilindro.DibujarFigura(g, cilindro.CoordX, cilindro.CoordY, Convert.ToInt16(txtRadio.Text)*2);
+                    //Escribe la superficie en el label de la forma
                     lblSuperficie.Text = $"Superficie {cilindro.CalcularSuperficie(Convert.ToDouble(txtRadio.Text))}";
                     break;
                 default:
@@ -54,6 +58,7 @@ namespace Cilindro
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Agregue un comentario en el Button1.CLick
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 if (comboBox1.SelectedIndex == 0)
