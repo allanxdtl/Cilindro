@@ -13,7 +13,5 @@ namespace Cilindro
         int CoordY { get; set; }
         //Metodo para cambiar el color del objeto
         void CambiarColor(Color c);
-
-
     }
 }

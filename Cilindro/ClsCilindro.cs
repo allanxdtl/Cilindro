@@ -41,7 +41,7 @@ namespace Cilindro
                 CoordY++;
             }
             
-            pincel= new SolidBrush(Color.Red);
+            pincel= new SolidBrush(Color.BlueViolet);
             g.FillEllipse(pincel, CoordX, CoordY-altura, diametro, diametro/4);
             pincel = new SolidBrush(Color.White);
             g.FillEllipse(pincel, CoordX, CoordY, diametro, diametro / 4);
